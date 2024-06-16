@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "491145273329",
+    "project_id": "ai-chef-e955f",
+    "storage_bucket": "ai-chef-e955f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491145273329:android:8483a4cdf053bcae26ee50",
+        "android_client_info": {
+          "package_name": "com.example.aichef"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxpIXOtbYPZapCXSTbhKnpdckdMnAblRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

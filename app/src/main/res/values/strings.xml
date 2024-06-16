@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AI Chef</string>
+    <string-array name="dealType">
+        <item>Каша</item>
+        <item>Фрукты</item>
+        <item>Мясо</item>
+        <item>Мучное</item>
+        <item>Рыба</item>
+        <item>Овощи</item>
+    </string-array>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

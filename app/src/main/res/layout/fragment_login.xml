@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D1BF"
+    android:theme="@style/ThemeOverlay.AIChef.FullscreenContainer"
+    tools:context=".registrationUsers.LoginFragment">
+
+    <TextView
+        android:id="@+id/labelLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="AI Chef"
+        android:textColor="#49454F"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_width="225dp"
+        android:layout_height="222dp"
+        app:layout_constraintBottom_toTopOf="@+id/label1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelLogin"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/image1" />
+
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Вход"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <LinearLayout
+        android:id="@+id/email_line"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label1">
+
+        <ImageView
+            android:id="@+id/emailIcon"
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintVertical_bias="0.635"
+            app:srcCompat="@drawable/iconmail" />
+
+        <EditText
+            android:id="@+id/signEmail"
+            android:layout_width="242dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="248dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Электронная почта"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.154"
+            app:layout_constraintStart_toEndOf="@+id/emailIcon"
+            app:layout_constraintTop_toBottomOf="@+id/label1"
+            app:layout_constraintVertical_bias="0.937" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password_line"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_line">
+
+        <ImageView
+            android:id="@+id/passwordIcon"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintVertical_bias="0.691"
+            app:srcCompat="@drawable/iconpassword" />
+
+        <EditText
+            android:id="@+id/signPassword"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toEndOf="@+id/passwordIcon"
+            app:layout_constraintVertical_bias="0.212" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signButton"
+        android:layout_width="110dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="128dp"
+        android:background="#673AB7"
+        android:fontFamily="monospace"
+        android:text="Войти"
+        android:textColor="#F3EFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_line"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Зарегистрируйся!"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toEndOf="@+id/labelNewHere"
+        app:layout_constraintTop_toBottomOf="@+id/signButton"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <TextView
+        android:id="@+id/labelNewHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Впервые здесь?"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signButton"
+        app:layout_constraintVertical_bias="0.728"
+        tools:text="Впервые здесь?" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

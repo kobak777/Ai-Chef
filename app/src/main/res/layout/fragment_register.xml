@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D8D1BF"
+    android:theme="@style/ThemeOverlay.AIChef.FullscreenContainer"
+    tools:context=".registrationUsers.RegisterFragment">
+
+    <TextView
+        android:id="@+id/labelLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="AI Chef"
+        android:textColor="#49454F"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_width="225dp"
+        android:layout_height="222dp"
+        app:layout_constraintBottom_toTopOf="@+id/labelReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelLogin"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/labelReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Регистрация"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+
+
+    <LinearLayout
+        android:id="@+id/email_line"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelReg">
+
+        <ImageView
+            android:id="@+id/emailIcon"
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintVertical_bias="0.635"
+            app:srcCompat="@drawable/iconmail" />
+
+        <EditText
+            android:id="@+id/email_et"
+            android:layout_width="246dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="248dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Электронная почта"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.154"
+            app:layout_constraintStart_toEndOf="@+id/emailIcon"
+            app:layout_constraintTop_toBottomOf="@+id/label1"
+            app:layout_constraintVertical_bias="0.937" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_line">
+
+        <ImageView
+            android:id="@+id/passwordIcon"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintVertical_bias="0.691"
+            app:srcCompat="@drawable/iconpassword" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="244dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toEndOf="@+id/passwordIcon"
+            app:layout_constraintVertical_bias="0.212" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regButton"
+        android:layout_width="182dp"
+        android:layout_height="50dp"
+        android:background="#673AB7"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Зарегистрироваться"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <LinearLayout
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageViewUser"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:srcCompat="@drawable/iconhuman" />
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="241dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="-6.5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Имя пользователя"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:layout_editor_absoluteX="90dp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/backBtnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#D7D0BE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regButton"
+        app:srcCompat="@drawable/arrow"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

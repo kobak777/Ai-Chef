@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.aichef.Pages.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_statFragment"
+            app:destination="@id/statFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_pointsFragment"
+            app:destination="@id/pointsFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addFragment"
+        android:name="com.example.aichef.Pages.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/pointsFragment"
+        android:name="com.example.aichef.Pages.PointsFragment"
+        android:label="fragment_points2"
+        tools:layout="@layout/fragment_points2" />
+    <fragment
+        android:id="@+id/statFragment"
+        android:name="com.example.aichef.Pages.StatFragment"
+        android:label="fragment_stat"
+        tools:layout="@layout/fragment_stat" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.aichef.registrationUsers.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment2"
+        android:name="com.example.aichef.registrationUsers.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment2_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+</navigation>
